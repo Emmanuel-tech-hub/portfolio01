@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Emmanuel Nyong — Automation & AI Workflow Architect</title>
+  <meta name="description" content="Portfolio of Emmanuel Nyong — automation systems, AI workflows, voice agents, and intelligent process design." />
+  <style>
+    :root{
+      --accent:#4dd0e1;
+      --accent-2:#8a6cff;
+      --bg-1:#050b17;
+      --bg-2:#020714;
+      --glass:rgba(255,255,255,0.05);
+      --muted:rgba(255,255,255,0.7);
+      --radius:14px;
+      --card:rgba(255,255,255,0.03);
+    }
+    html,body{height:100%;margin:0;font-family:"Inter",system-ui,Segoe UI,Roboto,Arial;background:radial-gradient(circle at 15% 10%,rgba(138,108,255,0.15),transparent 30%),radial-gradient(circle at 80% 90%,rgba(77,208,225,0.12),transparent 20%),linear-gradient(180deg,var(--bg-1),var(--bg-2));color:#ecf6ff;-webkit-font-smoothing:antialiased;display:flex;justify-content:center;padding:48px 20px 80px}
+    .wrap{width:100%;max-width:1080px}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}
+    .avatar{width:70px;height:70px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#041021;font-size:22px;box-shadow:0 6px 25px rgba(0,0,0,0.6)}
+    .brand h1{margin:0;font-size:1.2rem}
+    .brand p{margin:4px 0 0;color:var(--muted);font-size:0.9rem}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:0.92rem}
+    nav a.cta{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#041021;padding:8px 14px;border-radius:10px;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 300px;gap:22px}
+    .card{background:var(--card);padding:28px;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.05);box-shadow:0 10px 40px rgba(0,0,0,0.6)}
+    .card h2{margin:0 0 10px;font-size:1.5rem}
+    .card p{color:var(--muted);line-height:1.5}
+    .actions{margin-top:18px;display:flex;gap:10px}
+    .btn{padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.1);background:transparent;color:var(--muted);cursor:pointer}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#041021;font-weight:700;border:none}
+    .mini{background:var(--card);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);margin-bottom:10px}
+    .mini h4{margin:0 0 6px}
+    .mini p{margin:0;color:var(--muted);font-size:0.9rem}
+    #projects{margin-top:40px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .proj{background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.05);transition:transform .2s ease,box-shadow .2s ease}
+    .proj:hover{transform:translateY(-6px);box-shadow:0 16px 60px rgba(0,0,0,0.6)}
+    .thumb{height:150px;border-radius:10px;overflow:hidden;background:rgba(255,255,255,0.03);display:flex;align-items:center;justify-content:center}
+    .thumb img{width:100%;height:100%;object-fit:cover}
+    footer{margin-top:40px;text-align:center;color:var(--muted);font-size:0.9rem}
+    @media(max-width:860px){.hero{grid-template-columns:1fr}nav{display:none}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand" style="display:flex;gap:14px;align-items:center">
+      <div class="avatar">EN</div>
+      <div>
+        <h1>Emmanuel Nyong</h1>
+        <p>Automation & AI Workflow Architect</p>
+      </div>
+    </div>
+    <nav>
+      <a href="https://github.com/Emmanuel-tech-hub" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/emmanuel-nyong-24399638b" target="_blank">LinkedIn</a>
+      <a href="mailto:reachmoredigital01@gmail.com" class="cta">Email</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="card">
+      <h2>I build automation systems that work in the real world.</h2>
+      <p>Designing smart, secure workflows (n8n, Claude, Google Vision) that cut manual work and deliver real business results — across real estate, finance, and local communities.</p>
+      <div class="actions">
+        <button class="btn primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View Projects</button>
+        <a class="btn" href="https://wa.me/233000000000?text=Hi%20Emmanuel%2C%20let%27s%20talk" target="_blank">WhatsApp</a>
+      </div>
+      <p style="margin-top:10px;color:var(--muted)">📍 Abidjan  |  Available for short automation pilots</p>
+    </div>
+
+    <div>
+      <div class="mini">
+        <h4>Core Focus</h4>
+        <p>AI agents • Document intelligence • Voice automation • Workflow architecture</p>
+      </div>
+      <div class="mini">
+        <h4>Let’s Work Together</h4>
+        <p>Available for workflow design and AI integration projects.</p>
+        <a href="mailto:reachmoredigital01@gmail.com" class="btn primary" style="margin-top:10px;display:inline-block">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Selected Projects</h2>
+    <div class="grid">
+      <article class="proj">
+        <div class="thumb"><img src="screenshots/land-checker.png" alt="Land Checker"></div>
+        <h3>Land Document Readiness Checker</h3>
+        <p>OCR + scoring pipeline that highlights incomplete pages before submission.</p>
+      </article>
+      <article class="proj">
+        <div class="thumb"><img src="screenshots/real-estate-agent.png" alt="Real Estate Agent"></div>
+        <h3>Real Estate Front Desk Agent</h3>
+        <p>Automates lead capture and follow-ups to increase client conversion rates.</p>
+      </article>
+      <article class="proj">
+        <div class="thumb"><img src="screenshots/esim-waitlist.png" alt="eSIM Waitlist"></div>
+        <h3>eSIM Waitlist Landing</h3>
+        <p>Fast MVP page to validate market interest — live in under 48 hours.</p>
+      </article>
+      <article class="proj">
+        <div class="thumb"><img src="screenshots/church-followup.png" alt="Church Follow-up"></div>
+        <h3>Community Follow-up System</h3>
+        <p>Automated intake and SMS follow-up to maintain consistent engagement.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Emmanuel Nyong  |  Built with n8n · Claude · GitHub Pages  |  <a href="mailto:reachmoredigital01@gmail.com" style="color:var(--accent)">reachmoredigital01@gmail.com</a>
+  </footer>
+</div>
+</body>
+</html>
